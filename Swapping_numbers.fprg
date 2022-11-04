@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22026"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:19:34 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTExLTA0OzEwOjE0OjI2IEFNOzMwNTM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTExLTA0OzExOjE5OjM0IEFNOzU7MzE3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Swappiung the numbers without using third variable"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter value of a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter value of b&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="We add and subtract the numbers , so that the numbers get swapped."/>
+            <assign variable="a" expression="a+b"/>
+            <assign variable="b" expression="a-b"/>
+            <assign variable="a" expression="a-b"/>
+            <output expression="&quot;After swapping :&quot; &amp;a &amp; &quot;and&quot; &amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

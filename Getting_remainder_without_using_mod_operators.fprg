@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22026"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:14:19 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTExLTA0OzEwOjUyOjM0IEFNOzMwNTQ="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTExLTA0OzExOjE0OjE5IEFNOzM7MzE2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Getting remainder without using mod operators"/>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter value of dividend&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter value of divisor&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="Here We get quotient"/>
+            <assign variable="c" expression="a/b"/>
+            <comment text="we get remainder using the formula : dividend-(divisor*quotient)"/>
+            <assign variable="d" expression="a-(b*c)"/>
+            <output expression="&quot;Remainder :&quot; &amp;d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

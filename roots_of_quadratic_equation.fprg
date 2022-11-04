@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22026"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:18:36 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTExLTA0OzA5OjM4OjEwIEFNOzMwNjA="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTExLTA0OzExOjE4OjM2IEFNOzU7MzE3MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Roots of quadratic equation"/>
+            <declare name="a, b, c, x1, x2" type="Integer" array="False" size=""/>
+            <comment text="Get the values of coefficients"/>
+            <output expression="&quot;Enter the coeffiecient value of x^2&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the coefficient value of x&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter the constant value c&quot;" newline="True"/>
+            <input variable="c"/>
+            <comment text="Formula of quadratic equation : x= -b=+_sqrt b^2-4*a*c"/>
+            <assign variable="x1" expression="(-b+(b^2-4*a*c)^0.5)/2*a"/>
+            <assign variable="x2" expression="(-b-(b^2-4*a*c)^0.5)/2*a"/>
+            <output expression="&quot;Roots of Quadratic equation : &quot; &amp;x1 &amp; &quot;and&quot; &amp;x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
