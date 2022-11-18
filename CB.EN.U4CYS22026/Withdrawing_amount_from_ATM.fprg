@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22026"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:00:10 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTExLTE4OzA4OjU4OjM3IEFNOzMwNzU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTExLTE4OzEwOjAwOjEwIEFNOzE7MzE1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Program to withdraw amount from ATM"/>
+            <declare name="accno, name, balance, pin, money, availablebalance" type="Integer" array="False" size=""/>
+            <comment text="account number to given"/>
+            <output expression="&quot;please enter your accno&quot;" newline="True"/>
+            <input variable="accno"/>
+            <if expression="accno = 2004">
+                <then>
+                    <output expression="&quot;please enter your pin&quot;" newline="True"/>
+                    <comment text="security pin to be entered "/>
+                    <input variable="pin"/>
+                    <comment text="if the entered pin is correct , balance will be displayed"/>
+                    <assign variable="balance" expression="2500"/>
+                    <output expression="&quot;balance : 2500&quot;" newline="True"/>
+                    <if expression="pin=4002">
+                        <then>
+                            <comment text="amount required"/>
+                            <output expression="&quot;please enter the amount to be withdrawn&quot;" newline="True"/>
+                            <input variable="money"/>
+                            <comment text="if money is less than or equal to balance , we can withdraw the required amount"/>
+                            <if expression="money &lt;=  balance">
+                                <then>
+                                    <output expression="&quot;please collect your money :&quot; &amp; money" newline="True"/>
+                                    <assign variable="availablebalance" expression="balance-money"/>
+                                    <output expression="&quot;availablebalance:&quot; &amp; availablebalance" newline="True"/>
+                                    <comment text="At last , the available balance after withdrawal will be displayed"/>
+                                    <if expression="availablebalance &lt;=500">
+                                        <then>
+                                            <output expression="&quot;please deposit sufficient money or penalty charges will be applied&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;insufficient balance&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;you cannot withdraw the amount since your pin is invalid&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;you cannot withdraw the amount since your accno is wrong&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

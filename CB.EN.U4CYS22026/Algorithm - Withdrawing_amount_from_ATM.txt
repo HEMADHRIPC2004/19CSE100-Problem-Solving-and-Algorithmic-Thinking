@@ -1,0 +1,15 @@
+                                                    ALGORITHM
+                                            WITHDRAWING AMOUNT FROM ATM
+											
+1. Start
+2. declare variable : accno , name , balance , pin , money , available money
+3. if accno is correct print "enter your pin"
+4. else print "invalid ACCNO"
+5. if pin is correct print "balance=2500"
+6. enter pin . if pin is correct print "enter amount wanted"
+7. else print "invalid pin"
+8. if money <= balance print "collect your money"
+9. else if print "insufficient balance"
+10. print "available balance"
+11. if available balance <=500 print "deposit money"
+12. stop
