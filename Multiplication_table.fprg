@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22026"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:55:38 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTEyLTAyOzA5OjM3OjE2IEFNOzMwNjQ="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTEyLTAyOzA5OjM3OjE5IEFNOzE7Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTEyLTAyOzA5OjIxOjMyIEFNO0FkZGl0aW9uX3RhYmxlLmZwcmc7ODI1Mg=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTEyLTAyOzA5OjU1OjM4IEFNOzQ7MzE3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Multiplication table"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;The multiplication table of &quot;&amp;i&amp;&quot; is :&quot;" newline="True"/>
+                <for variable="j" start="1" end="10" direction="inc" step="1">
+                    <output expression="i&amp;&quot;*&quot; &amp;j&amp;&quot;=&quot; &amp; i*j" newline="True"/>
+                    <comment text="Multiplication table is displayed"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

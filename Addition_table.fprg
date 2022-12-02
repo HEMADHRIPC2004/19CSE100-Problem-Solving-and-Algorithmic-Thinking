@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22026"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:55:43 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTEyLTAyOzA5OjIxOjMyIEFNOzMwNTU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTEyLTAyOzA5OjU1OjQzIEFNOzU7MzE3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Addition table from 1 to 10"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <comment text="Give for condition"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;The addition table of &quot;&amp;i&amp;&quot; is :&quot;" newline="True"/>
+                <for variable="j" start="1" end="10" direction="inc" step="1">
+                    <output expression="i&amp;&quot;+&quot; &amp;j&amp;&quot;=&quot; &amp; i+j" newline="True"/>
+                    <comment text="Addition table is displayed"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

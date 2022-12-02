@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22026"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:55:49 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTEyLTAyOzA5OjE2OjI3IEFNOzMwNjM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTEyLTAyOzA5OjU1OjQ5IEFNOzQ7MzE4MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Factorial table of n numbers"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of n&quot;" newline="True"/>
+            <comment text="Get input"/>
+            <input variable="n"/>
+            <assign variable="factorial" expression="1"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="factorial" expression="factorial*i"/>
+            </for>
+            <output expression="&quot;Factorial value of  &quot;&amp;n&amp;&quot; is :&quot; &amp;factorial" newline="True"/>
+            <comment text="Factorial table is displayed"/>
+        </body>
+    </function>
+</flowgorithm>
