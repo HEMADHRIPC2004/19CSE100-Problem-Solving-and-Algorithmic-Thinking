@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22026"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:46:29 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTEyLTAyOzA5OjU5OjUyIEFNOzMwNjg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNjsyMDIyMjNNQVlDMDA2MzsyMDIyLTEyLTAyOzEwOjQ2OjI5IEFNOzU7MzE3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Fibonacci Series"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <declare name="k" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="flag" type="Integer" array="False" size=""/>
+            <comment text="assign i=o , since 0 is first number"/>
+            <assign variable="i" expression="0"/>
+            <comment text="assign i=1 , since 1 is second number"/>
+            <assign variable="j" expression="1"/>
+            <output expression="&quot;Enter value of n&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="i" newline="True"/>
+            <output expression="j" newline="True"/>
+            <for variable="flag" start="0" end="n-3" direction="inc" step="1">
+                <assign variable="k" expression="i+j"/>
+                <output expression="k" newline="True"/>
+                <assign variable="i" expression="j"/>
+                <assign variable="j" expression="k"/>
+                <comment text="Fibonaccci series of n numbers is displayed"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
