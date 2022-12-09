@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pchem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:15:13 AM"/>
+        <attribute name="created" value="cGNoZW07SEVNQURIUkk7MjAyMi0xMi0wOTswOToxNTozMSBBTTsyMzY5"/>
+        <attribute name="edited" value="cGNoZW07SEVNQURIUkk7MjAyMi0xMi0wOTsxMToxNToxMyBBTTsyOzI0NzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Storing numbers in Array"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <declare name="values" type="Integer" array="True" size="10"/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <comment text="since there are 10 elements , indices range from 0 to 9"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <comment text="Getting the values and storing it in the array"/>
+                <output expression="&quot;Enter the values : [&amp;index&amp;] : &quot;" newline="True"/>
+                <input variable="value"/>
+                <assign variable="values[index]" expression="value"/>
+            </for>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <comment text="Here we display the contents of the array to the user"/>
+                <output expression="&quot;The values = &quot;&amp;values[index]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

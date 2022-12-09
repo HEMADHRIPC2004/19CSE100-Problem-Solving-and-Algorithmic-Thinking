@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pchem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:17:28 AM"/>
+        <attribute name="created" value="cGNoZW07SEVNQURIUkk7MjAyMi0xMi0wOTswOTo0NDo0MyBBTTsyMzc0"/>
+        <attribute name="edited" value="cGNoZW07SEVNQURIUkk7MjAyMi0xMi0wOTswOTo1MToyOSBBTTsxO3BjaGVtO0hFTUFESFJJOzIwMjItMTItMDY7MDI6Mzk6MzkgUE07QXJyYXkuZnByZzs1OTc4"/>
+        <attribute name="edited" value="cGNoZW07SEVNQURIUkk7MjAyMi0xMi0wOTsxMDoyMTowOSBBTTsxO2RlZXBhaztERUVQQUtLVU1BUjsyMDIyLTEyLTA5OzA5OjU0OjU0IEFNO0xhcmdlc3RFbGVtZW50QXJyYXlbMV0uZnByZzs3OTQ4"/>
+        <attribute name="edited" value="cGNoZW07SEVNQURIUkk7MjAyMi0xMi0wOTsxMToxNzoyOCBBTTszOzI0ODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programme to find largest element in the array"/>
+            <declare name="numbers" type="Integer" array="True" size="5"/>
+            <declare name="number, i, v" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <comment text="We get values and store it in the array"/>
+                <output expression="&quot;Enter the values &amp;i&amp;  = &quot;" newline="True"/>
+                <input variable="number"/>
+                <assign variable="numbers[i]" expression="number"/>
+            </for>
+            <assign variable="v" expression="0"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <comment text="Here , it checks the condition and displays the result"/>
+                <if expression="v&lt;numbers[i]">
+                    <then>
+                        <assign variable="v" expression="numbers[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="v" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
