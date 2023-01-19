@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pchem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-06 11:54:26 PM"/>
+        <attribute name="created" value="cGNoZW07SEVNQURIUkk7MjAyMy0wMS0wNjsxMToyNzozMCBQTTsyMzc1"/>
+        <attribute name="edited" value="cGNoZW07SEVNQURIUkk7MjAyMy0wMS0wNjsxMTo1NDoyNiBQTTsxOzI0ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number to find factorial&quot;" newline="True"/>
+            <input variable="n"/>
+            <call expression="fact(n)"/>
+        </body>
+    </function>
+    <function name="fact" type="None" variable="">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i, a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <if expression="n&gt;0 or n=0">
+                <then>
+                    <for variable="i" start="1" end="n" direction="inc" step="1">
+                        <assign variable="a" expression="a*i"/>
+                    </for>
+                    <output expression="a" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;factorial for negative numbers are not possible&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

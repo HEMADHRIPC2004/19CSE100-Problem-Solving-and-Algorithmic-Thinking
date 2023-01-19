@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pchem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-06 11:27:23 PM"/>
+        <attribute name="created" value="cGNoZW07SEVNQURIUkk7MjAyMy0wMS0wNjswODo0NToyNCBQTTsyMzg0"/>
+        <attribute name="edited" value="cGNoZW07SEVNQURIUkk7MjAyMy0wMS0wNjsxMToyNzoyMyBQTTsxOzI0ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Steel grader is an automated system which performs grading of the steel under sime conditions."/>
+            <declare name="number, i" type="Integer" array="False" size=""/>
+            <declare name="steeldata" type="Integer" array="True" size="3"/>
+            <output expression="&quot;how many steels you want to grade&quot;" newline="True"/>
+            <input variable="number"/>
+            <for variable="i" start="1" end="number" direction="inc" step="1">
+                <output expression="&quot;enter the data for steel&quot; &amp;i" newline="True"/>
+                <comment text="hardness"/>
+                <input variable="steeldata[0]"/>
+                <comment text="carbon content"/>
+                <input variable="steeldata[1]"/>
+                <comment text="tensile strength"/>
+                <input variable="steeldata[2]"/>
+                <output expression="&quot;grade for steel&quot; &amp;i" newline="True"/>
+                <output expression="gradesteel(steeldata[0],steeldata[1],steeldata[2])" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="gradesteel" type="Integer" variable="result">
+        <parameters>
+            <parameter name="hardness" type="Integer" array="False"/>
+            <parameter name="carboncontent" type="Integer" array="False"/>
+            <parameter name="strength" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <if expression="hardness&gt;50 &amp;&amp; carboncontent&lt;0.7 &amp;&amp; strength&gt;5600">
+                <then>
+                    <assign variable="result" expression="10"/>
+                </then>
+                <else>
+                    <if expression="hardness&gt;50 &amp;&amp; carboncontent&lt;0.7">
+                        <then>
+                            <assign variable="result" expression="9"/>
+                        </then>
+                        <else>
+                            <if expression="carboncontent&lt;0.7 &amp;&amp; strength&gt;5600">
+                                <then>
+                                    <assign variable="result" expression="8"/>
+                                </then>
+                                <else>
+                                    <if expression="hardness&gt;50 &amp;&amp; strength&gt;5600">
+                                        <then>
+                                            <assign variable="result" expression="7"/>
+                                        </then>
+                                        <else>
+                                            <if expression="hardness&gt;50||carboncontent&lt;0.7||strength&gt;5600">
+                                                <then>
+                                                    <assign variable="result" expression="6"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="result" expression="5"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

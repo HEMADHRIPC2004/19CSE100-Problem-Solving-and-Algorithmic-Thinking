@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pchem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-07 12:07:29 AM"/>
+        <attribute name="created" value="cGNoZW07SEVNQURIUkk7MjAyMy0wMS0wNjsxMTo1NDo0NCBQTTsyMzgw"/>
+        <attribute name="edited" value="cGNoZW07SEVNQURIUkk7MjAyMy0wMS0wNzsxMjowNzoyOSBBTTsxOzI0NzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number for fibonacci series&quot;" newline="True"/>
+            <input variable="n"/>
+            <call expression="fibonacci(n)"/>
+        </body>
+    </function>
+    <function name="fibonacci" type="None" variable="">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i, a, b, c" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="c" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="c" expression="a+b"/>
+                <output expression="a&amp;&quot;+&quot;&amp;b&amp;&quot;=&quot;&amp;c" newline="True"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="c"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
